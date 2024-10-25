@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Property Slider</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+            rel="stylesheet">
+        <link href="../CSS/style.css" rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/flaticon/2.3.0/flaticon.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    </head>
+
+    <body>
+        <div class="body-contaner">
+            <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+                <div class="container">
+                    <a id="head" class="navbar-brand p-lg-3"
+                        style="color: #fff;"
+                        href="#">Property</a>
+                    <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse"
+                        id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="p-lg-3 nav-link active"
+                                    aria-current="page" href="#"
+                                    style="color: #fff;">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="p-lg-3 nav-link dropdown-toggle"
+                                    href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false" style="color: #fff;">
+                                    Properties
+                                </a>
+                                <ul class="dropdown-menu"
+                                    aria-labelledby="navbarDropdown"
+                                    style="color: #fff;">
+                                    <li><a class="dropdown-item" href="#">Buy
+                                            Property</a></li>
+                                    <li><a class="dropdown-item" href="#">Sell
+                                            Property</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item"
+                                            href="#"></a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="p-lg-3 nav-link" href="#"
+                                    style="color: #fff;">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="p-lg-3 nav-link" href="#"
+                                    style="color: #fff;">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="p-lg-3 nav-link" href="#"
+                                    style="color: #fff;">Contact
+                                    Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="header">
+                <div class="header-page">
+                    <h1>Easiest way to find your dream home</h1>
+                </div>
+                <div class="header-search">
+                    <form action="#">
+                        <input type="text"
+                            placeholder="Your ZIP code or City.eg">
+                        <button style="font-size: 16px;">search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-5">
+            <div class="d-flex justify-content-between align-items-center">
+                <h2 class="text-left">Popular Properties</h2>
+                <a href="#" class="btn btn-outline-success">View all
+                    properties</a>
+            </div>
+            <div id="propertySlider" class="carousel slide"
+                data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4 property-card">
+                                <img
+                                    src="https://themewagon.github.io/property/images/img_1.jpg"
+                                    class="d-block w-100" alt="Property Image">
+                                <div class="details">
+                                    <h5>EGP 1,000,000</h5>
+                                    <hr>
+                                    <p>7890 Mediterranean Drive, El Alamein, EG.
+                                        22GH</p>
+                                    <p><strong>El Alamein, EG</strong></p>
+                                    <p><i class="fas fa-bed"></i> 2 beds <i
+                                            class="fas fa-bath"></i> 2 baths</p>
+                                    <a href="#" class="btn btn-primary"
+                                        style="background-color:rgb(0, 32, 74); border-radius: 15px;border-color:rgb(0, 32, 74);;">See
+                                        details</a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 property-card">
+                                <img
+                                    src="https://themewagon.github.io/property/images/img_8.jpg"
+                                    class="d-block w-100" alt="Property Image">
+                                <div class="details">
+                                    <h5>EGP 750,000</h5>
+                                    <hr>
+                                    <p>3456 Sea View Road, El Alamein, EG.
+                                        33IJ</p>
+                                    <p><strong>El Alamein, EG</strong></p>
+                                    <p><i class="fas fa-bed"></i> 2 beds <i
+                                            class="fas fa-bath"></i> 2 baths</p>
+                                    <a href="#" class="btn btn-primary"
+                                        style="background-color:rgb(0, 32, 74); ; border-radius: 15px;border-color: rgb(0, 32, 74);">See
+                                        details</a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 property-card">
+                                <img
+                                    src="https://themewagon.github.io/property/images/img_2.jpg"
+                                    class="d-block w-100" alt="Property Image">
+                                <div class="details">
+                                    <h5>EGP 500,000</h5>
+                                    <hr>
+                                    <p>5678 Sunset Boulevard, El Alamein, EG.
+                                        44KL</p>
+                                    <p><strong>El Alamein, EG</strong></p>
+                                    <p><i class="fas fa-bed"></i> 2 beds <i
+                                            class="fas fa-bath"></i> 2 baths</p>
+                                    <a href="#" class="btn btn-primary"
+                                        style="background-color:rgb(0, 32, 74); ; border-radius: 15px;border-color: rgb(0, 32, 74);">See
+                                        details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4 property-card">
+                                <img
+                                    src="https://themewagon.github.io/property/images/img_3.jpg"
+                                    class="d-block w-100" alt="Property Image">
+                                <div class="details">
+                                    <h5>EGP 1,910,000</h5>
+                                    <hr>
+                                    <p>1234 Coastal Avenue, El Alamein, EG.
+                                        55MN</p>
+                                    <p><strong>El Alamein, EG</strong></p>
+                                    <p><i class="fas fa-bed"></i> 2 beds <i
+                                            class="fas fa-bath"></i> 2 baths</p>
+                                    <a href="#" class="btn btn-primary"
+                                        style="background-color:rgb(0, 32, 74);; border-radius: 15px;border-color: rgb(0, 32, 74);">See
+                                        details</a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 property-card">
+                                <img
+                                    src="https://themewagon.github.io/property/images/img_4.jpg"
+                                    class="d-block w-100" alt="Property Image">
+                                <div class="details">
+                                    <h5>EGP 1,260,000</h5>
+                                    <hr>
+                                    <p>9101 Lighthouse Lane, El Alamein, EG.
+                                        66OP</p>
+                                    <p><strong>El Alamein, EG</strong></p>
+                                    <p><i class="fas fa-bed"></i> 2 beds <i
+                                            class="fas fa-bath"></i> 2 baths</p>
+                                    <a href="#" class="btn btn-primary"
+                                        style="background-color:rgb(0, 32, 74);border-radius: 15px;border-color: rgb(0, 32, 74);">See
+                                        details</a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 property-card">
+                                <img
+                                    src="https://themewagon.github.io/property/images/img_6.jpg"
+                                    class="d-block w-100" alt="Property Image">
+                                <div class="details">
+                                    <h5>EGP 1,300,000</h5>
+                                    <hr>
+                                    <p>4567 North Coast, El Alamein, EG.
+                                        11EF</p>
+                                    <p><strong>El Alamein, EG</strong></p>
+                                    <p><i class="fas fa-bed"></i> 2 beds <i
+                                            class="fas fa-bath"></i> 2 baths</p>
+                                    <a href="#" class="btn btn-primary"
+                                        style="background-color:rgb(0, 32, 74); ; border-radius: 15px; border-color: rgb(0, 32, 74);">See
+                                        details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="features-1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6 col-lg-3 aos-init aos-animate"
+                            data-aos="fade-up" data-aos-delay="300">
+                            <div class="box-feature">
+                                <span class="feature-icon fas fa-home"></span>
+                                <h3 class="mb-3">Our Properties</h3>
+                                <p>Discover a variety of properties suited to
+                                    your needs. From charming apartments to
+                                    luxurious villas, find your dream home with
+                                    us.</p>
+                                <p><a href="#" class="learn-more">Learn
+                                        More</a></p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3 aos-init aos-animate"
+                            data-aos="fade-up" data-aos-delay="500">
+                            <div class="box-feature">
+                                <span
+                                    class="feature-icon fas fa-building"></span>
+                                <h3 class="mb-3">Property for Sale</h3>
+                                <p>Browse through our extensive listings of
+                                    properties for sale. Whether commercial or
+                                    residential, find a space that meets your
+                                    criteria.</p>
+                                <p><a href="#" class="learn-more">Learn
+                                        More</a></p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3 aos-init aos-animate"
+                            data-aos="fade-up" data-aos-delay="400">
+                            <div class="box-feature">
+                                <span
+                                    class="feature-icon fas fa-user-tie"></span>
+                                <h3 class="mb-3">Real Estate Agent</h3>
+                                <p>Our professional and dedicated real estate
+                                    agents offer expert guidance through every
+                                    step of your property search. With deep
+                                    market knowledge.
+                                </p>
+                                <p><a href="#" class="learn-more">Learn
+                                        More</a></p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3 aos-init aos-animate"
+                            data-aos="fade-up" data-aos-delay="600">
+                            <div class="box-feature">
+                                <span
+                                    class="feature-icon fas fa-house-user"></span>
+                                <h3 class="mb-3">House for Sale</h3>
+                                <p>Explore a range of houses for sale that fit
+                                    your lifestyle. From cozy cottages to
+                                    spacious family homes, find the perfect
+                                    house today.</p>
+                                <p><a href="#" class="learn-more">Learn
+                                        More</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ------------------------------------------------------------ -->
+            <div class="section sec-testimonials">
+                <div class="container">
+                    <div class="row mb-5 align-items-center">
+                        <div class="col-md-6">
+                            <h2 class="customer2">Customer Says</h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div id="propertySlider" class="carousel slide">
+                                <div class="carousel-inner card-slider-wrap">
+                                    <!-- Slide 1 -->
+                                    <div class="carousel-item active">
+                                        <div class="card-slider">
+                                            <!-- Card 1 -->
+                                            <div class="card">
+                                                <img
+                                                    src="https://th.bing.com/th/id/OIP.iRzhrKervh9XPwh1bekmIwHaHa?rs=1&pid=ImgDetMain"
+                                                    alt="Image">
+                                                <div class="rate">
+                                                    <span
+                                                        class="icon-star text-warning">&#9733;</span>
+                                                    <span
+                                                        class="icon-star text-warning">&#9733;</span>
+                                                    <span
+                                                        class="icon-star text-warning">&#9733;</span>
+                                                    <span
+                                                        class="icon-star text-warning">&#9733;</span>
+                                                    <span
+                                                        class="icon-star text-warning">&#9733;</span>
+                                                </div>
+                                                <h3
+                                                    class="h5 mb-4"
+                                                    style="color: rgb(0, 32, 74);">Ahmed
+                                                    Bahr</h3>
+                                                <blockquote>
+                                                    <p>“This service exceeded my
+                                                        expectations. The
+                                                        attention to detail and
+                                                        customer care was
+                                                        exceptional. I highly
+                                                        recommend it to anyone
+                                                        looking for quality and
+                                                        professionalism.”</p>
+                                                </blockquote>
+                                                <p
+                                                    class="text-black-50">Designer,
+                                                    Co-founder</p>
+                                            </div>
+                                            <!-- Card 2 -->
+                                            <div class="card">
+                                                <img
+                                                    src="https://th.bing.com/th/id/OIP.gcrXNZvGyVAPVTssMqif0QHaHa?rs=1&pid=ImgDetMain"
+                                                    alt="Image">
+                                                <div class="rate">
+                                                    <span
+                                                        class="icon-star text-warning">&#9733;</span>
+                                                    <span
+                                                        class="icon-star text-warning">&#9733;</span>
+                                                    <span
+                                                        class="icon-star text-warning">&#9733;</span>
+                                                    <span
+                                                        class="icon-star text-warning">&#9733;</span>
+                                                    <span
+                                                        class="icon-star text-warning">&#9733;</span>
+                                                </div>
+                                                <h3
+                                                    class="h5 mb-4"
+                                                    style="color: rgb(0, 32, 74);">Essam
+                                                    Sasa</h3>
+                                                <blockquote>
+                                                    <p>“Outstanding experience!
+                                                        The team was
+                                                        professional and
+                                                        responsive, making the
+                                                        entire process smooth
+                                                        and efficient. I’m
+                                                        thoroughly impressed
+                                                        with the results.”</p>
+                                                </blockquote>
+                                                <p
+                                                    class="text-black-50">Developer</p>
+                                            </div>
+                                            <!-- Card 3 -->
+                                            <div class="card">
+                                                <img
+                                                    src="https://th.bing.com/th/id/OIP.YQXUam7zCI-ojmYV64McwQHaHa?w=197&h=197&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                                                    alt="Image">
+                                                <div class="rate">
+                                                    <span
+                                                        class="icon-star text-warning">&#9733;</span>
+                                                    <span
+                                                        class="icon-star text-warning">&#9733;</span>
+                                                    <span
+                                                        class="icon-star text-warning">&#9733;</span>
+                                                    <span
+                                                        class="icon-star text-warning">&#9733;</span>
+                                                    <span
+                                                        class="icon-star text-warning">&#9733;</span>
+                                                </div>
+                                                <h3
+                                                    class="h5 mb-4"
+                                                    style="color: rgb(0, 32, 74);">Yasmin
+                                                    Sabry</h3>
+                                                <blockquote>
+                                                    <p>“The level of expertise
+                                                        and dedication was
+                                                        evident in every aspect
+                                                        of the project. Their
+                                                        commitment to excellence
+                                                        truly sets them apart
+                                                        from the
+                                                        competition.”</p>
+                                                </blockquote>
+                                                <p class="text-black-50">Project
+                                                    Manager</p>
+                                            </div>
+                                            <!-- Card 4 -->
+                                            <div class="card">
+                                                <img
+                                                    src="https://th.bing.com/th/id/OIP.D0LkyFMdEYvpUKhkN2ZCnAAAAA?w=208&h=208&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                                                    alt="Image">
+                                                <div class="rate">
+                                                    <span
+                                                        class="icon-star text-warning">&#9733;</span>
+                                                    <span
+                                                        class="icon-star text-warning">&#9733;</span>
+                                                    <span
+                                                        class="icon-star text-warning">&#9733;</span>
+                                                    <span
+                                                        class="icon-star text-warning">&#9733;</span>
+                                                    <span
+                                                        class="icon-star text-warning">&#9733;</span>
+                                                </div>
+                                                <h3
+                                                    class="h5 mb-4"
+                                                    style="color: rgb(0, 32, 74);">Rania
+                                                    Mansour</h3>
+                                                <blockquote>
+                                                    <p>“Excellent service with a
+                                                        personal touch. The team
+                                                        went above and beyond to
+                                                        ensure my satisfaction.
+                                                        I am extremely happy
+                                                        with the outcome.”</p>
+                                                </blockquote>
+                                                <p
+                                                    class="text-black-50">Marketing
+                                                    Specialist</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ------------------------------------------------------------ -->
+
+                <div class="part-4">
+                    <div class="caption">
+                        <p>Let's find a home that's perfect for you</p>
+                    </div>
+                    <div class="caption-2">
+                        <p>Discover your dream property with us. Whether
+                            you're
+                            buying, selling, or renting, we provide the best
+                            options
+                            tailored to your needs.</p>
+                    </div>
+
+                    <div class="core-part4">
+                        <div class="text-part4">
+                            <div class="info-item">
+                                <i class="fas fa-home"></i>
+                                <div>
+                                    <p class="main">2M Properties</p>
+                                    <p class="sub">Explore over 2 million
+                                        properties
+                                        across the globe, featuring a wide
+                                        range
+                                        of
+                                        choices from affordable homes to
+                                        luxury
+                                        estates.</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-user-tie"></i>
+                                <div>
+                                    <p class="main">Top Rated Agents</p>
+                                    <p class="sub">Our experienced agents
+                                        are
+                                        here
+                                        to guide you through every step of
+                                        the
+                                        process, ensuring you make the best
+                                        decisions.</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <div>
+                                    <p class="main">Legit Properties</p>
+                                    <p class="sub">All our properties are
+                                        verified
+                                        for authenticity, offering you a
+                                        secure
+                                        and
+                                        trustworthy buying or renting
+                                        experience.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="img-part4">
+                            <img
+                                src="https://themewagon.github.io/property/images/hero_bg_3.jpg"
+                                alt="Property Image">
+                        </div>
+                    </div>
+
+                    <div class="wrapper">
+                        <div class="contain">
+                            <i class="fas fa-home"></i>
+                            <span class="num" data-val="3298">3,298</span>
+                            <span class="text"># Buy Properties</span>
+                        </div>
+
+                        <div class="contain">
+                            <i class="fas fa-dollar-sign"></i>
+                            <span class="num" data-val="2181">2,181</span>
+                            <span class="text"># Sell Properties</span>
+                        </div>
+
+                        <div class="contain">
+                            <i class="fas fa-list-alt"></i>
+                            <span class="num" data-val="9316">9,316</span>
+                            <span class="text"># All Properties</span>
+                        </div>
+
+                        <div class="contain">
+                            <i class="fas fa-user-tie"></i>
+                            <span class="num" data-val="7191">7,191</span>
+                            <span class="text"># Agents</span>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- realStateSection -->
+
+                <div class="real-state-p">
+                    <p>Be a part of our growing real state agents</p>
+                </div>
+                <div class="real-state-btn">
+                    <button class="btn">Apply for Real Estate agent
+                    </button>
+                </div>
+                <!-- ---------------------------------------------------------------------------------- -->
+                <section>
+                    <div class="container">
+                        <div class="section-title">
+                            <h2>Our Agents</h2>
+                            <p>Discover the finest properties in El Alamein,
+                                where
+                                modern luxury meets Egypt’s rich coastal
+                                beauty.
+                                Our
+                                expert agents are here to help you every
+                                step of
+                                the
+                                way in finding your perfect home. From
+                                pristine
+                                beaches to stunning villas, your dream
+                                property
+                                is
+                                just a click away!</p>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <!-- Agent 1 -->
+                            <div class="col-md-4">
+                                <div class="agent-card">
+                                    <img
+                                        src="https://th.bing.com/th/id/OIP.kHGxBSmgV__FkKZ7J5vWQQAAAA?rs=1&pid=ImgDetMain"
+                                        alt="Ahmed Helmy">
+                                    <h4> Ahmed Helmy</h4>
+                                    <p>Alexandria</p>
+                                    <p>Looking for your dream home in the
+                                        heart
+                                        of
+                                        El Alamein? I'm here to help you
+                                        find
+                                        the
+                                        perfect beachfront property. Whether
+                                        it’s a
+                                        vacation getaway or a permanent
+                                        residence,
+                                        I’ll guide you through every step.
+                                        Let’s
+                                        make your El Alamein lifestyle a
+                                        reality!
+
+                                    </p>
+                                    <div
+                                        class="social-icons agent-social-icons">
+                                        <a href="#"><i
+                                                class="fab fa-twitter"
+                                                style="font-size: 25px; color: #fff;"></i></a>
+                                        <a href="#"><i
+                                                class="fab fa-facebook-f"
+                                                style="font-size: 25px; color: #fff;"></i></a>
+                                        <a href="#"><i
+                                                class="fab fa-linkedin-in"
+                                                style="font-size: 25px; color: #fff;"></i></a>
+                                        <a href="#"><i
+                                                class="fab fa-instagram"
+                                                style="font-size: 25px; color: #fff;"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Agent 2 -->
+                            <div class="col-md-4">
+                                <div class="agent-card">
+                                    <img
+                                        src="https://th.bing.com/th/id/OIP.hN4d7g9SsjBycEkg56atRAHaFs?w=203&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                                        alt="Basem Samra">
+                                    <h4>Basem Samra</h4>
+                                    <p>Cairo</p>
+                                    <p>El Alamein is more than just a
+                                        destination,
+                                        it's a lifestyle. I’m committed to
+                                        helping
+                                        you explore the best properties,
+                                        whether
+                                        you're searching for luxury villas
+                                        or
+                                        modern
+                                        apartments. Get in touch, and let’s
+                                        discover
+                                        your next home by the sea!</p>
+                                    <div
+                                        class="social-icons agent-social-icons">
+                                        <a href="#"><i
+                                                class="fab fa-twitter"
+                                                style="font-size: 25px; color: #fff;"></i></a>
+                                        <a href="#"><i
+                                                class="fab fa-facebook-f"
+                                                style="font-size: 25px; color: #fff;"></i></a>
+                                        <a href="#"><i
+                                                class="fab fa-linkedin-in"
+                                                style="font-size: 25px; color: #fff;"></i></a>
+                                        <a href="#"><i
+                                                class="fab fa-instagram"
+                                                style="font-size: 25px; color: #fff;"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Agent 3 -->
+                            <div class="col-md-4">
+                                <div class="agent-card">
+                                    <img
+                                        src="https://th.bing.com/th/id/R.4ff57e57a88e0fb167cdbe4c2b2b584a?rik=SS%2f9RNRiXk4Xtw&pid=ImgRaw&r=0"
+                                        alt="Menna Baher">
+                                    <h4>Khaled EL-Nabawy</h4>
+                                    <p>Cairo</p>
+                                    <p>The beauty of El Alamein is
+                                        unparalleled,
+                                        and
+                                        so are its real estate
+                                        opportunities.
+                                        From
+                                        stunning coastal views to vibrant
+                                        communities, I’m here to assist you
+                                        in
+                                        finding your perfect property match.
+                                        Let’s
+                                        start your journey to owning a piece
+                                        of
+                                        El
+                                        Alamein!</p>
+                                    <div
+                                        class="social-icons agent-social-icons">
+                                        <a href="#"><i
+                                                class="fab fa-twitter"
+                                                style="font-size: 25px; color: #fff;"></i></a>
+                                        <a href="#"><i
+                                                class="fab fa-facebook-f"
+                                                style="font-size: 25px; color: #fff;"></i></a>
+                                        <a href="#"><i
+                                                class="fab fa-linkedin-in"
+                                                style="font-size: 25px; color: #fff;"></i></a>
+                                        <a href="#"><i
+                                                class="fab fa-instagram"
+                                                style="font-size: 25px; color: #fff;"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- ------------------------------------------------------------------------ -->
+                <footer>
+                    <div class="footer-container">
+                        <div class="footer-section">
+                            <p class="footer-text">CONTACT</p>
+                            <address>
+                                4567 North Coast, El Alamein, EG.
+                                11EF<br><br>
+                                <a
+                                    href="tel:+11234567890">01206236985</a><br>
+                                <br>
+                                <a
+                                    href="shahdbaher1@gmail.com">shahdbaher1@gmail.com</a>
+                            </address>
+                        </div>
+
+                        <div class="footer-section">
+                            <p class="footer-text">SOURCES</p>
+                            <ul>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Vision</a></li>
+                                <li><a href="#">Mission</a></li>
+                                <li><a href="#">Terms</a></li>
+                                <li><a href="#">Privacy</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-section">
+                            <p class="footer-text">LINKS</p>
+                            <ul>
+                                <li><a href="#">Our Vision</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Contact us</a></li>
+                            </ul>
+                            <div
+                                class="social-icons agent-social-icons">
+                                <a href="#"><i
+                                        class="fab fa-twitter"
+                                        style="font-size: 25px; color: #fff;"></i></a>
+                                <a href="#"><i
+                                        class="fab fa-facebook-f"
+                                        style="font-size: 25px; color: #fff;"></i></a>
+                                <a href="#"><i
+                                        class="fab fa-linkedin-in"
+                                        style="font-size: 25px; color: #fff;"></i></a>
+                                <a href="#"><i
+                                        class="fab fa-instagram"
+                                        style="font-size: 25px; color: #fff;"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-bottom">
+                        <p>Copyright © 2024. All Rights Reserved. — Designed
+                            with love by <a href="#">Shahd Baher</a></p>
+                        <p>Distributed by <a href="#">ITC Collage</a></p>
+                    </div>
+                </footer>
+
+                <script
+                    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+                <script>
+        const propertySlider = new bootstrap.Carousel('#propertySlider', {
+            interval: 1200,
+            ride: 'carousel'
+        }); 
+const animateNumbers = () => {
+    const numbers = document.querySelectorAll('.num');
+    numbers.forEach((num) => {
+        let startValue = 0;
+        const endValue = parseInt(num.getAttribute('data-val'));
+        const duration = 2000;  
+
+        const increment = Math.ceil(endValue / (duration / 10));
+
+        const count = setInterval(() => {
+            startValue += increment;
+            if (startValue >= endValue) {
+                startValue = endValue;
+                clearInterval(count);
+            }
+            num.textContent = startValue;
+        }, 10);
+    });
+};
+
+
+window.onload = animateNumbers;
+
+
+    </script>
+            </body>
+
+        </html>
+
+</body>
+</html>
